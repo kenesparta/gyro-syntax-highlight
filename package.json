@@ -1,0 +1,25 @@
+{
+    "name": "gyro",
+    "displayName": "GYRO",
+    "description": "Syntax for the gyro.dev infra as a code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "GYRO Lang",
+            "aliases": ["gyro", "GYRO Lang"],
+            "extensions": [".gyro"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "GYRO Lang",
+            "scopeName": "source.gyro",
+            "path": "./syntaxes/GYRO Lang.tmLanguage.json"
+        }]
+    }
+}
