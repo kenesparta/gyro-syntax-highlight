@@ -3,23 +3,48 @@
 	"name": "gyro",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#strings"
 		},
 		{
-			"include": "#strings"
+			"include": "#strings-single"
+		},
+		{
+			"match": "#.*",
+			"name": "comment.line.number-sign.GYRO"
+		},
+		{
+			"match": "@(?<!\\$)\\b(if|for|end|credentials|state-backend)\\b(?!\\$)",
+			"name": "keyword.control.GYRO Lang"
+		},
+		{
+			"match": "@(?<!\\$)\\b(repository|plugin|uses-credentials)\\b(?!\\$)",
+			"name": "storage.type.annotation.GYRO Lang"
+		},
+		{
+			"match": "aws::[\\w-]*",
+			"name": "entity.name.function.GYRO Lang"
+		},
+		{
+			"match": "(?<!\\$)\\b(end)\\b(?!\\$)",
+			"name": "entity.name.function.GYRO Lang"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.GYRO Lang",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
 		"strings": {
 			"name": "string.quoted.double.GYRO Lang",
 			"begin": "\"",
 			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.GYRO Lang",
+					"match": "\\\\."
+				}
+			]
+		},
+		"strings-single": {
+			"name": "string.quoted.simple.GYRO Lang",
+			"begin": "'",
+			"end": "'",
 			"patterns": [
 				{
 					"name": "constant.character.escape.GYRO Lang",
