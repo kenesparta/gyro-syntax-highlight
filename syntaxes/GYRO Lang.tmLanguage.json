@@ -13,7 +13,7 @@
 			"name": "comment.line.number-sign.GYRO"
 		},
 		{
-			"match": "@(?<!\\$)\\b(if|for|end|credentials|state-backend)\\b(?!\\$)",
+			"match": "@(?<!\\$)\\b(if|for|end|credentials|state-backend|scaling-policy|lifecycle-hook|auto-scaling-notification)\\b(?!\\$)",
 			"name": "keyword.control.GYRO Lang"
 		},
 		{
