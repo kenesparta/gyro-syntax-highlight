@@ -13,11 +13,11 @@
 			"name": "comment.line.number-sign.GYRO"
 		},
 		{
-			"match": "@(?<!\\$)\\b(if|for|end|credentials|state-backend|scaling-policy|lifecycle-hook|auto-scaling-notification)\\b(?!\\$)",
+			"match": "@(?<!\\$)\\b(if|for|end|credentials|state-backend)\\b(?!\\$)",
 			"name": "keyword.control.GYRO Lang"
 		},
 		{
-			"match": "@(?<!\\$)\\b(repository|plugin|uses-credentials)\\b(?!\\$)",
+			"match": "@(?<!\\$)\\b(repository|plugin|uses-credentials|scaling-policy|lifecycle-hook|auto-scaling-notification)\\b(?!\\$)",
 			"name": "storage.type.annotation.GYRO Lang"
 		},
 		{
