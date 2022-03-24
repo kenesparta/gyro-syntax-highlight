@@ -17,10 +17,6 @@
 			"name": "keyword.control.GYRO Lang"
 		},
 		{
-			"match": "(?<!\\$)\\b(scaling-policy|lifecycle-hook|auto-scaling-notification)\\b(?!\\$)",
-			"name": "keyword.control.GYRO Lang"
-		},
-		{
 			"match": "@(?<!\\$)\\b(repository|plugin|uses-credentials)\\b(?!\\$)",
 			"name": "storage.type.annotation.GYRO Lang"
 		},
@@ -29,7 +25,7 @@
 			"name": "entity.name.function.GYRO Lang"
 		},
 		{
-			"match": "(?<!\\$)\\b(end)\\b(?!\\$)",
+			"match": "(?<!\\$)\\b(end|scaling-policy|lifecycle-hook|auto-scaling-notification)\\b(?!\\$)",
 			"name": "entity.name.function.GYRO Lang"
 		}
 	],
